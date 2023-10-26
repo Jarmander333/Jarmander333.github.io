@@ -4,24 +4,28 @@
 		
 	</head>
 	<body>
-		<h2>Super Mario War on the Steam Deck</h2> <hr>
-		<p>Do you want Super Mario War on your Steam Deck?  Well, here's my experiences with it!  NOTE: Do not run commands with the quotation marks, just what is contained within the quotations.  </p>
+		<h2>Super Mario War on the Steam Deck</h2> 
+		<hr>
+		<p>Do you want Super Mario War on your Steam Deck?  Well, here's my experiences with it!</p>
+		<p>NOTE: Do not run commands with the quotation marks, just what is contained within the quotations.</p>
+		<p>Step 0: Reboot into desktop mode.  Open youself up a terminal (default is Konsole).
 		<p>Step 1: Set a root password for your Steam Deck with the command "passwd".</p>
 		<p>Step 2: Disable SteamOS's read-only measure by the command "sudo steamos-readonly disable".</p>
-		<p>Step 3: Install Super Mario War's prerequisites (CMake; Git; SDL; SDL_image; SDL_mixer; Zlib). "sudo pacman -S cmake git sdl sdl_image sdl_mixer zlib".</p>
+		<p>Step 3: Install Super Mario War's prerequisites (CMake; Git; SDL; SDL_image; SDL_mixer; Zlib) with the command "sudo pacman -S cmake git sdl sdl_image sdl_mixer zlib".</p>
 		<p>Step 4: Get the Super Mario War 2.0 source code by the command "git clone https://github.com/mmatyas/supermariowar.git".</p>
 		<p>Step 5: Change you directory to the downloaded code via "cd supermariowar".</p>
 		<p>Step 6: Make [and cd into] a build directory for the cmake building. "mkdir build && cd build".</p>
 		<p>Step 7: Start the cmake build process with "cmake .."</p>
 		<p>Step 8: Start the make process to compile Super Mario War with the command "make -j4"</p>
-		<p>Step 9: When the makefile has completed its job, there should be a ./Binaries/Release/ folder ('.' meaning current directory). I usually copy the executables in ./Binaries/Release to /usr/local/bin "sudo cp -r ./Binaries/Release/* /usr/local/bin".</p>
+		<p>Step 9: When the makefile has completed its job, there should be a ./Binaries/Release/ folder ('.' meaning current directory). I usually copy the executables in ./Binaries/Release to /usr/local/bin  by "sudo cp -r ./Binaries/Release/* /usr/local/bin".</p>
 		<p>Step 10: Open Steam, and add a "Non-Steam Game" [in the bottom left corner], or some phrasing of the sort.  
 		<p>Step 11: Navigate to where we copied the executables to (/usr/local/bin), and add the "/usr/local/bin/smw" executable.</p>
 		<p>Step 12: For safety/security reasons remember to enable SteamOS's read-only measure. "sudo steamos-readonly enable"</p>
 		<p>Step 13: Make sure to set your controls on your Steam Deck, otherwise, have fun playing with a connected keyboard.
 		<p>Step 14: You should be all good to play it for now.  A SteamOS upgrade *might* remove the Arch packages that Super Mario War depends on.  If it does, just run commands from Step 2, 3, and 12 again in that order.</p> <hr>
+		<hr>
 		<footer>
-			<h3>I WILL ADD PHOTOS/CSS/JS-->(maybe?) AT A LATER TIME.</h3>
+			<h3>I WILL ADD PHOTOS/CSS/JS LATER(TM).</h3>
 		</footer>
 	</body>
 </html>
