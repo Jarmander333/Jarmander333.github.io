@@ -2,3 +2,26 @@ body {
 	background-image: url(https://spaceplace.nasa.gov/review/all-about-the-moon/the-moon-near-side.en.jpg);	
 }
 
+h2 {
+	color: #D8D8D8;
+}
+
+ /* unvisited link */
+a:link {
+  color: #5DD1FF;
+}
+
+/* visited link */
+a:visited {
+  color: #31ADDE;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF0000;
+}
+
+/* selected link */
+a:active {
+  color: #FFCC00;
+} 
