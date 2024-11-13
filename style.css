@@ -46,5 +46,6 @@ a:active {
 }
 
 .push:active .front {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  padding: 10px;
 }
